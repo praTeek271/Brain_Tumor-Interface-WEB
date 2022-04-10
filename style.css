@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background:linear-gradient(to left, #43cea2, #185a9d);
+}
+/*------------------- navbar ------------------------*/
+.nav{
+  background-color: #eaa14f;
+  height: 45px;
+  padding-top: 12px;
+  overflow-x:hidden;
+}
+
+#logo-text{
+    float: left;
+    font-family: 'Indie Flower', cursive;
+    padding: 0px 0px 0px 4rem;
+    font-size: 2rem;
+    color: ghostwhite;
+}
+#logo-text:hover{
+  color: cornflowerblue;
+}
+#nav-list{
+    float: right;
+}
+#nav-list span.items a{
+    padding:12px ;
+    color: #ffffff;
+    font-family: cursive;
+    font-size: bold;
+    text-decoration: none;
+    animation: float 5s ease-in-out infinite;
+}
+
+#nav-list span.items a:hover{
+    color: deeppink;
+    animation-delay: 1s;
+}
+@keyframes float{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+#nav-list span.items a.facebook:hover{
+  color: #3b5998;
+}
+#nav-list span.items a.twitter:hover{
+  color:  #1DA1F2;
+}
+#nav-list span.items a.instagram:hover{
+  color: #833AB4;
+}
+
+
+.nav #nav-list .social{
+  width: 12px;
+  height: 12px;
+
+}
+.nav #nav-list .row{
+  width: 123px;
+}
+ 
+
+
+/* -------------navbar close------------------------- */
+.slideshow{
+    margin-left: 0px;
+    margin-right: 12rem;
+}
+.slideshow .slide {
+    width: 100%;
+    position: relative;
+    margin: 7rem 0px 1px 3rem;
+    padding-left: 9rem;
+}
+
+.slideshow .slide .content{
+    display: none;
+    right: 0;
+}
+
+.slideshow .slide .row a button{
+    cursor: pointer;
+    position: relative;
+    bottom: 55px;
+    margin-top: 23px;
+    padding: 12px 4px 12px 4px;
+    color: #302e2edb;
+    background: transparent;
+    font-weight: bold;
+    font-size: 19px;
+    transition: background-color 0.5s ease;
+    border-style: hidden;
+}
+.slideshow .slide .row{
+    margin-top: 4rem;
+    position: absolute;
+    top: 30%;
+}
+.row .forward {
+    right: 0;
+    margin-left: 73rem;
+  
+  }
+
+.row .back {
+    left: 0;
+    margin-left: -11rem;
+  
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+
+
+main .slideshow .slide .btn{
+    position:relative;
+    border: none;
+    margin: 2.19px  25rem 10px 25rem;
+    border-radius: 10px;
+    background: linear-gradient(120deg, #8bf8ba 0%, #b9e7fc 100%);
+    margin-bottom:2rem;
+    margin-top: 2rem;
+    padding: 4px;
+    text-align: center;
+    font-size: 24px;
+    object-fit: cover;
+    font-family: cursive;
+    color:#781e1e78;
+}
+
+main .slideshow .slide .btn:hover{
+    background: transparent;
+    border: 2px solid green;
+    color: rgb(0, 128, 117);
+}
+
+
+/*------------------------------------------------- footer -----------------------------*/
+.table-container tr td{
+    margin-left: 22px;
+}
+footer{
+    color:white;
+  }
+  
+.footer .container .row {
+  background-color: black;
+  width: 78rem;
+  margin-top: 44rem;
+}
+.footer .container .row .container-footer{
+  bottom: 3rem;
+  max-height: 13rem;
+  display: flex;
+  text-align: -webkit-center;
+  justify-content:space-around;
+
+  color: rgba(171, 163, 163, 0.705);
+}
+.col-6{
+  padding-left: 33rem;
+  padding-top: 6rem;
+}
+.footer .container .row .col-md{
+  padding-left: 3rem;
+  padding-top: 9px;
+}
+.footer .container .row .container-footer .col-md a{
+  text-decoration: none;
+  color: white;
+
+
+}
+/*------------------------------------------------- footer_close --------------------------- */
+
+
+/* ----------------------------------RESULT_PAGE(CSS)--------------------------------------------------- */
+
+.greatings .result-welcome{
+  position: relative;
+  text-align: center;
+  padding-top: 4rem;
+}
+.greatings .result-welcome{
+ color: ghostwhite;;
+}
+.greatings .result-welcome:hover{
+  color: #ea4f8d;
+}
+
+
+.results{
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  
+}
+
+.results .result-content{
+  border: black;
+  border-radius: 3px;
+  border-style: dashed;
+  padding: 5px;
+  margin: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.results .result-content .result-img{
+  max-height:15rem ;
+  min-height: 13rem;
+}
+.results .result-content:hover{
+  background-color: #323131;
+  color: #14c363;
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  /* perspective: 1000px; */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color:transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* --------------------------------ANALYSIS PAGE(css)--------------------------------- */
+
+.upload-content{
+  position: relative;
+  justify-content: center;
+}
+
+.upload-content .drop-box{
+  position: relative;
+  border: 2px dotted black;
+  /* justify-content: center; */
+  text-align: center;
+  display: block;
+  border-radius: 9px;
+  color: #b163e5;
+  min-height: 23rem;
+  background-color: #ffffff70;
+  margin: 4rem;
+  padding-top: 9rem;
+  
+}
