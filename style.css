@@ -37,23 +37,10 @@ body{
     font-family: cursive;
     font-size: bold;
     text-decoration: none;
-    animation: float 5s ease-in-out infinite;
 }
 
 #nav-list span.items a:hover{
     color: deeppink;
-    animation-delay: 1s;
-}
-@keyframes float{
-  0%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(-15px);
-  }
-  100%{
-    transform: translateY(0);
-  }
 }
 
 #nav-list span.items a.facebook:hover{
