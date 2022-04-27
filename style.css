@@ -277,6 +277,8 @@ footer{
 .flip-card-back {
   background-color: #2980b9;
   color: white;
+  min-height: 300px;
+  min-width: 300px;
   transform: rotateY(180deg);
 }
 /* --------------------------------ANALYSIS PAGE(css)--------------------------------- */
