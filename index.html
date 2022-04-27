@@ -21,37 +21,83 @@
             border: 2px solid green;
             color: rgb(0, 128, 117);
         }
+        .nav{
+            background-color: #eaa14f;
+            height: 62px;
+            padding-top: 12px;
+            overflow-x:hidden;
+          }
+
+          #logo-text{
+              float: left;
+              font-family: 'Indie Flower', cursive;
+              padding: 0px 0px 0px 4rem;
+              font-size: 2rem;
+              color: ghostwhite;
+          }
+          #logo-text:hover{
+            color: cornflowerblue;
+          }
+          #nav-list{
+              float: right;
+          }
+          #nav-list span.items a{
+              padding:12px ;
+              color: #ffffff;
+              font-family: cursive;
+              font-size: bold;
+              text-decoration: none;
+          }
+
+          #nav-list span.items a:hover{
+              color: deeppink;
+          }
+
+          #nav-list span.items a.facebook:hover{
+            color: #3b5998;
+          }
+          #nav-list span.items a.twitter:hover{
+            color:  #1DA1F2;
+          }
+          #nav-list span.items a.instagram:hover{
+            color: #833AB4;
+          }
+
+
+          .nav #nav-list .social{
+            width: 12px;
+            height: 12px;
+
+          }
+          .nav #nav-list .row{
+            width: 123px;
+          }
+          
+          .active{
+            height:400px;
+          }
+
     </style>
   </head>
   <body>
 
 <!---------------------------------- navbar ----------------------------------------->
-<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #f2a34e; min-height:8rem;overflow-y: hidden;" >
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" style="font-family: 'Indie Flower', cursive;">Brain-Tumor</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="left: 0;">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="result.html">Result</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="analyse.html">Analysis</a>
-          </li>
-          <div class="social text-gray">
-            <a href="#"><i class="fab fa-facebook" title="facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram" title="instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter" title="twitter"></i></a>
-        </div>
-         
-      </div>
-    </div>
-  </nav>
+<nav class="nav">
+  <div id="logo-text">Brain-Tumor</div>
+  <div id="nav-list">
+      <span class="items"><a href="index.html">Home</a></span>
+      <span class="items"><a href="result.html">Result</a></span>
+      <span class="items"><a href="analyse.html">Analysis</a></span>     
+      <span class="social items">
+          <a href="facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>  
+          <a href="twitter.html" class="twitter"><i class="fa fa-twitter"></i></a>  
+          <a href="instagram.com" class="instagram"><i class="fa fa-instagram"></i></i></a>
+      </span>
+  </div>
+    
+</div>
+
+</nav>
 <!------------------------------------------ navbar-close --------------------------------->
 <main>
     <section>
@@ -93,6 +139,7 @@
    </section>
    
 </main>
+
 <footer class="container py-5">
     <div class="row">
       <div class="col-12 col-md">
