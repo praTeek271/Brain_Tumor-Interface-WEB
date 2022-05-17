@@ -15,7 +15,7 @@ body{
   background-color: #eaa14f;
   height: 45px;
   padding-top: 12px;
-  overflow-x:hidden;
+  overflow:hidden;
 }
 
 #logo-text{
@@ -301,4 +301,33 @@ footer{
   margin: 4rem;
   padding-top: 9rem;
   
+}
+.select-file{
+  display: flex;
+  position: relative;
+}
+.select-file .file[type=file]{
+  opacity: 0;
+}
+
+.select-file .lbl-file{
+  box-sizing: border-box;
+  background: white;
+  display: flex;
+  position: relative;
+  align-items: center;
+  left: 286px;
+  border-radius: 5px;
+  left: 286px;
+  width: 86px;
+  height: 39px;
+  padding: 4px;
+  cursor: pointer;
+
+}
+
+.analyse-content{
+  padding-top: 13px;
+  font-size: 23px;
+  color: white;
 }
